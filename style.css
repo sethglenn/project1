@@ -1,0 +1,20 @@
+img { 
+    height: 300px;
+    width: 300px;
+    padding: 25;
+   
+  }
+.container {
+    background-color: grey;
+    height: 500px;  
+    width: 500px;
+    border-color: black;
+    
+}
+body {
+    background-color: black;
+}
+.nav-wrapper{
+    background: coral;
+    font-size: 80px;
+}
