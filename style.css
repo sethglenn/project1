@@ -1,20 +1,56 @@
 img { 
-    height: 300px;
-    width: 300px;
-    padding: 25;
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    
    
   }
 .container {
     background-color: grey;
     height: 500px;  
-    width: 500px;
-    border-color: black;
-    
+    width: 600px;
+    border-radius: 50px;
 }
 body {
     background-color: black;
+    
 }
 .nav-wrapper{
-    background: coral;
-    font-size: 80px;
+    background: salmon;
+    
+    
+}
+.carousel{
+    margin: 50px;
+    right: 60px;
+  bottom: 60px;
+}
+.flight-info{
+   background-color: aqua;
+   height: 300px;
+   right: 50px;
+   text-align: center;
+   font-size: 50px;
+   color: white;
+    
+
+}
+.modal{
+    background-color: pink !important;
+
+}
+.btn{
+    background-color: blue !important;
+    left: 1635px;
+    bottom: 60px;
+}
+.col{
+    height: 900px;
+    width: 250px;
+    background-color: salmon;
+    border-radius: 50px;
+    right: 200px;
+    bottom: 200px !important;
+    text-align: center !important;
+    font-size: 50px;
 }
