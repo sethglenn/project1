@@ -1,8 +1,12 @@
+body{
+    background-color: grey;
+}
 #firstRow{
     background-color: aqua;
 }
 #secondRow{
     background-color: salmon;
+    font-size: 60px;
 }
 .row{
     margin: 50px;
@@ -19,5 +23,10 @@
 }
 .btn{
     background-color: blue !important;
+    left: 800px;
+    top: 400px;
     
+}
+.img{
+    height: 500px;
 }
