@@ -1,10 +1,10 @@
 $(document).ready(function(){
-    $('#demo-carousel').carousel();
-  });
+  $('#demo-carousel').carousel();
+});
 
-  $(document).ready(function(){
-    $('.modal').modal();
-  });
-  $(document).ready(function() {
-    M.updateTextFields();
-  });
+$(document).ready(function(){
+  $('.modal').modal();
+});
+$(document).ready(function() {
+  M.updateTextFields();
+});
