@@ -1,20 +1,33 @@
-img { 
-    height: 300px;
-    width: 300px;
-    padding: 25;
-   
-  }
-.container {
+body{
     background-color: grey;
-    height: 500px;  
-    width: 500px;
-    border-color: black;
-    
 }
-body {
-    background-color: black;
+#firstRow{
+    background-color: aqua;
+}
+#secondRow{
+    background-color: salmon;
+    font-size: 60px;
+}
+.row{
+    margin: 50px;
+    height: 400px;
+    border-radius: 50px;
+    text-align: center;
 }
 .nav-wrapper{
-    background: coral;
-    font-size: 80px;
+    background: salmon;
+}
+.modal{
+    background-color: pink !important;
+
+}
+.btn{
+    background-color: blue !important;
+    left: 800px;
+    top: 185px;
+    
+    
+}
+.img{
+    height: 500px;
 }

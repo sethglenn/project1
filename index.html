@@ -1,36 +1,61 @@
 <!DOCTYPE html>
-<html>
- <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
   <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    
- </head>
-
-<body> 
-    <nav>
+            
+</head>
+<body>
+    <body> <nav>
         <div class="nav-wrapper">
           <form>
             <div class="input-field">
               <input id="search" type="search" required>
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <label class="label-icon" for="search"><i class="material-icons">search a city</i></label>
               <i class="material-icons">close</i>
             </div>
           </form>
         </div>
       </nav>
+        
 <div class="container">
-<div class="carousel" id="demo-carousel">
-    <a class="carousel-item" href="#California!"><img src="https://media-cdn.tripadvisor.com/media/photo-s/01/09/97/fe/los-angeles.jpg"></a>
-    <a class="carousel-item" href="#Mexico!"><img src="https://distillery.com/content/uploads/2019/09/Blog-Distillery-Developers-Mexico-City-1050x574-100.jpg"></a>
-    <a class="carousel-item" href="#Italy!"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQr_QtTLXPoQQL4ATghUPoY-i055_MsJaCpGw&amp;usqp=CAU"></a>
-    <a class="carousel-item" href="#Japan!"><img src="https://kenyanwallstreet.com/wp-content/uploads/2020/04/JAPAN_COVER_final5.jpg" ></a>
-    <a class="carousel-item" href="#Cuba!"><img src="https://www.katalay.net/images/lg/370726e7c24de35b11cd4646f7521dbc.jpg" ></a>
-  </div>
+            <div class="row" id="firstRow">
+                <div class="carousel" id="demo-carousel">
+                    <a class="carousel-item" href="#1!"><img src="https://via.placeholder.com/600"></a>
+                    <a class="carousel-item" href="#2!"><img src="https://via.placeholder.com/600"></a>
+                    <a class="carousel-item" href="#3!"><img src="https://via.placeholder.com/600"></a>
+                    <a class="carousel-item" href="#4!"><img src="https://via.placeholder.com/600" ></a>
+                    <a class="carousel-item" href="#5!"><img src="https://via.placeholder.com/600"  ></a>
+                  </div>
+            </div>
+            <div class="row" id="secondRow">
+                <div class="col s12">Flight info<div>
+                  <div class="input-field col s4">
+                    <input id="flyingFrom" type="text" class="validate">
+                    <label for="flyingFrom">Flying from?</label>
+                  </div>
+            </div>
 </div>
-<script src="script.js"></script>
-</body>   
-</html>
+<footer>
+   <!-- Modal Trigger -->
+   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">DISCLAIMER</a>
 
+   <!-- Modal Structure -->
+   <div id="modal1" class="modal">
+     <div class="modal-content">
+       <h4>Due to the COVID-19 pandemic, we understand Customers might be uncertain about their travel plans in the months ahead. </h4>
+     </div>
+     <div class="modal-footer">
+       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Gotcha!</a>
+     </div>
+   </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
