@@ -27,17 +27,16 @@ function displayTripInfo(){
       var cityName = $("<h1>").html("City Name: " + city);
       var date = $("<p>").html("Departure date: " + response.trips[0].departure_date);
       var currency = $("<p>").html("Currency Type: " + response.lowest_price_object.currency);
+      var price = $("<p>").html("Price of Trip: " + response.trips[0].price.value);
 
 
 
-
-      $(".flightInfo").append(cityName, date, currency);
+      $(".flightInfo").append(cityName, date, currency, price);
 
 
     })
   
   }
-
 
 
 
@@ -48,6 +47,7 @@ $(".search").on("click", function(event){
 
   var city = $("#citySearch").val().trim();
 
+  $(".flightInfo").empty();
   displayTripInfo(city);
   console.log(city);
 
