@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "project1 @ c8841f4",
+			"uri": "gitlens://c8841f4/c:/Users/Seth/Git/project/project1?{\"path\":\"/c:/Users/Seth/Git/project/project1\",\"ref\":\"c8841f49ca7430b669d23568cbed6cac9594974c\",\"repoPath\":\"c:/Users/Seth/Git/project/project1\"}"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}

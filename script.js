@@ -10,7 +10,6 @@ $(document).ready(function() {
 });
 // API information
 
-
 function displayTripInfo(){
 
   // var city = $(this).attr("data-name");
@@ -33,13 +32,19 @@ function displayTripInfo(){
 
       $(".flightInfo").append(cityName, date, currency, price);
 
+      var stor = $(".flightInfo").html();
+      localStorage.setItem("trip", stor);
 
+      function localStor() {
+
+        $(".flightInfo").innerHTML = localStorage.getItem("trip");
+      
+      }
+
+      localStor();
     })
   
   }
-
-
-
 
 // event handler to return API information
 $(".search").on("click", function(event){
