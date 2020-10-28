@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-            
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
 </head>
+
 <body>
-    <body> <nav>
-        <div class="nav-wrapper">
-          <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label class="label-icon" for="search"><i class="material-icons">search a city</i></label>
-              <i class="material-icons">close</i>
+
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+                        <input id="citySearch" type="search" required>
+                        <button class="waves-effect waves-light btn search">Search</button>
+                        <label class="label-icon" for="search"><i class="material-icons">search a city</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
             </div>
-          </form>
-        </div>
-      </nav>
-        
-<div class="container">
+        </nav>
+        <div class="container">
             <div class="row" id="firstRow">
                 <div class="carousel" id="demo-carousel">
                     <a class="carousel-item" href="#1!"><img src="https://via.placeholder.com/600"></a>
                     <a class="carousel-item" href="#2!"><img src="https://via.placeholder.com/600"></a>
                     <a class="carousel-item" href="#3!"><img src="https://via.placeholder.com/600"></a>
-                    <a class="carousel-item" href="#4!"><img src="https://via.placeholder.com/600" ></a>
-                    <a class="carousel-item" href="#5!"><img src="https://via.placeholder.com/600"  ></a>
-                  </div>
+                    <a class="carousel-item" href="#4!"><img src="https://via.placeholder.com/600"></a>
+                    <a class="carousel-item" href="#5!"><img src="https://via.placeholder.com/600"></a>
+                </div>
             </div>
             <div class="row" id="secondRow">
-                <div class="col s12">Flight info<div>
-                  <div class="input-field col s4">
-                    <input id="flyingFrom" type="text" class="validate">
-                    <label for="flyingFrom">Flying from?</label>
-                  </div>
+                <div class="col s12 card">Flight info<div></div>
+                    <div class="input-field col s4 flightInfo card-content"></div>
+                </div>
             </div>
-</div>
-<footer>
-   <!-- Modal Trigger -->
-   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">DISCLAIMER</a>
+            <footer>
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn2 btn modal-trigger" href="#modal1">DISCLAIMER</a>
 
-   <!-- Modal Structure -->
-   <div id="modal1" class="modal">
-     <div class="modal-content">
-       <h4>Due to the COVID-19 pandemic, we understand Customers might be uncertain about their travel plans in the months ahead. </h4>
-     </div>
-     <div class="modal-footer">
-       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Gotcha!</a>
-     </div>
-   </div>
-</footer>
-<script src="script.js"></script>
-</body>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Due to the COVID-19 pandemic, we understand Customers might be uncertain about their travel
+                            plans in the months ahead. </h4>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Gotcha!</a>
+                    </div>
+                </div>
+            </footer>
+            <script src="script.js"></script>
+    </body>
+
 </html>
