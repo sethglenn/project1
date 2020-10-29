@@ -1,11 +1,12 @@
 body{
-    background-color: grey;
+    background-color: rgb(26,26,28);
+    width: auto;
 }
 #firstRow{
-    background-color: aqua;
+    background-color: rgb(78,78,80);
 }
 #secondRow{
-    background-color: salmon;
+    background-color: rgb(26,26,28);
     font-size: 60px;
 }
 .row{
@@ -15,19 +16,30 @@ body{
     text-align: center;
 }
 .nav-wrapper{
-    background: salmon;
+    background: rgb(195,8,63);
 }
 .modal{
-    background-color: pink !important;
+    background-color: rgb(111,34,50) !important;
 
 }
-.btn{
-    background-color: blue !important;
-    left: 800px;
-    top: 185px;
+.btn2{
+   
+    left: 800px !important;
+    top: 20px;
     
     
 }
 .img{
     height: 500px;
+}
+.btn{
+    background-color: rgb(111,34,50) !important;
+    bottom: 80px;
+    left: 1655px;
+}
+
+.card{
+    background-color: rgb(78,78,80) !important;
+    text-align: center !important;
+    border-radius: 50px !important;
 }
