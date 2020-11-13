@@ -28,7 +28,7 @@ $(document).ready(function () {
 
      for(var i = 0; i < res.results.length; i++){
     var a = $("<a>");
-    if(i===0){
+     if(i===0){
       a.attr("class","carousel-item active");
 
     }
@@ -37,13 +37,105 @@ $(document).ready(function () {
     a.attr("style","display:block")
 
     var img = $("<img>");
-    img.attr("src", res.results[i].urls.small+".png");
+    img.attr("src", res.results[1].urls.small+".png");
 
     a.append(img);
  
      d1.append(a);
      }
      $(".ex1").append(d1);
+
+     //  PIC 2 ****************
+    var d2 = $("<div>");
+    d2.attr("class","carousel test");
+
+     for(var i = 0; i < res.results.length; i++){
+    var a = $("<a>");
+     if(i===0){
+      a.attr("class","carousel-item active");
+
+    }
+    a.attr("class","carousel-item");
+    a.attr("href","#"+(i+1)+"!");
+    a.attr("style","display:block")
+
+    var img = $("<img>");
+    img.attr("src", res.results[2].urls.small+".png");
+
+    a.append(img);
+ 
+     d2.append(a);
+     }
+     $(".ex2").append(d2);
+
+     //  PIC 3 ****************
+    var d3 = $("<div>");
+    d3.attr("class","carousel test");
+
+     for(var i = 0; i < res.results.length; i++){
+    var a = $("<a>");
+     if(i===0){
+      a.attr("class","carousel-item active");
+
+    }
+    a.attr("class","carousel-item");
+    a.attr("href","#"+(i+1)+"!");
+    a.attr("style","display:block")
+
+    var img = $("<img>");
+    img.attr("src", res.results[3].urls.small+".png");
+
+    a.append(img);
+ 
+     d3.append(a);
+     }
+     $(".ex3").append(d3);
+
+     //  PIC 4 ****************
+    var d4 = $("<div>");
+    d4.attr("class","carousel test");
+
+     for(var i = 0; i < res.results.length; i++){
+    var a = $("<a>");
+     if(i===0){
+      a.attr("class","carousel-item active");
+
+    }
+    a.attr("class","carousel-item");
+    a.attr("href","#"+(i+1)+"!");
+    a.attr("style","display:block")
+
+    var img = $("<img>");
+    img.attr("src", res.results[4].urls.small+".png");
+
+    a.append(img);
+ 
+     d4.append(a);
+     }
+     $(".ex4").append(d4);
+
+     //  PIC 5 ****************
+    var d5 = $("<div>");
+    d5.attr("class","carousel test");
+
+     for(var i = 0; i < res.results.length; i++){
+    var a = $("<a>");
+     if(i===0){
+      a.attr("class","carousel-item active");
+
+    }
+    a.attr("class","carousel-item");
+    a.attr("href","#"+(i+1)+"!");
+    a.attr("style","display:block")
+
+    var img = $("<img>");
+    img.attr("src", res.results[5].urls.small+".png");
+
+    a.append(img);
+ 
+     d5.append(a);
+     }
+     $(".ex5").append(d5);
 
   });
 }
