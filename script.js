@@ -7,8 +7,6 @@ $(document).ready(function () {
 
   function addModalImg(location){
 
-
-  
   //var location = "london";
   var queryPic =
     "https://api.unsplash.com/search/photos/?query=" +
@@ -49,6 +47,7 @@ $(document).ready(function () {
 }
 
   // API information
+  
 
   function displayTripInfo() {
   
@@ -76,16 +75,25 @@ $(document).ready(function () {
 
       $(".flightInfo").append(cityName, date, currency, price);
 
+
+      
       var stor = $(".flightInfo").html();
       localStorage.setItem("trip", stor);
 
-      function localStor() {
-        $(".flightInfo").innerHTML = localStorage.getItem("trip");
-      }
-
-      localStor();
+      
+      // document.getElementsByClassName("flightInfo").innerHTML = localStorage.getItem("trip");
+      
+      
+      
+      
     });
   }
+
+  document.getElementsByClassName("flightInfo").innerHTML = localStorage.getItem("trip");
+
+  // localStorage.setItem("citySearch", location);
+
+  // document.getElementsByClassName("flightInfo").innerHTML = localStorage.getItem("citySearch");
 
   // event handler to return API information
   $(".search").on("click", function (event) {
