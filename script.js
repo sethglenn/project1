@@ -3,6 +3,7 @@ $(document).ready(function () {
   $(".test").carousel();
   $(".modal").modal();
 
+
   //PIC API
 
   function addModalImg(location){
@@ -142,8 +143,9 @@ $(document).ready(function () {
 
   // API information
 
+
   function displayTripInfo() {
-  
+
     var city = $("#citySearch").val().trim();
     var queryURL =
       "https://public-api.blablacar.com/api/v2/trips?key=NGAGPgif8Qr9SQYIMftZVh64jQTSMcpG&fn=" +
@@ -156,35 +158,63 @@ $(document).ready(function () {
       console.log(response);
 
       var cityName = $("<h1>").html("City Name: " + city);
-      var date = $("<p>").html(
-        "Departure date: " + response.trips[0].departure_date
-      );
-      var currency = $("<p>").html(
-        "Currency Type: " + response.lowest_price_object.currency
-      );
-      var price = $("<p>").html(
-        "Price of Trip: " + response.trips[0].price.value
-      );
+
+      var date = $("<p>").html("Departure date: " + response.trips[0].departure_date);
+
+      var currency = $("<p>").html("Currency Type: " + response.lowest_price_object.currency);
+
+
+      var price = $("<p>").html("Price of Trip: " + response.trips[0].price.value);
 
       $(".flightInfo").append(cityName, date, currency, price);
 
-      var stor = $(".flightInfo").html();
-      localStorage.setItem("trip", stor);
 
-      function localStor() {
-        $(".flightInfo").innerHTML = localStorage.getItem("trip");
-      }
 
-      localStor();
+      var stor = ["City Name: " + city,
+      "Departure date: " + response.trips[0].departure_date,
+      "Currency Type: " + response.lowest_price_object.currency,
+      "Price of Trip: " + response.trips[0].price.value,
+      ];
+
+      localStorage.setItem("citySearch2", JSON.stringify(stor));
+
+      // var object = localStorage.getItem(JSON.parse("trip"));
+
+      // document.getElementsByClassName("flightInfo").textContent = object;
+
+
+
+
+
+
+
     });
   }
 
+
+  // localStorage.setItem("citySearch", location);
+
+  // document.getElementsByClassName("flightInfo").innerHTML = localStorage.getItem("citySearch");
+
   // event handler to return API information
+  window.onload = function () {
+
+    var object = JSON.parse(localStorage.getItem("citySearch2"));
+
+    document.getElementById("cityClass").innerText = object[0];
+    document.getElementById("dateClass").innerText = object[1];
+    document.getElementById("currencyClass").innerText = object[2];
+    document.getElementById("priceClass").innerText = object[3];
+
+  }
+
+
   $(".search").on("click", function (event) {
     event.preventDefault();
 
     var city = $("#citySearch").val().trim();
     addModalImg(city);
+
 
     $(".flightInfo").empty();
     displayTripInfo(city);
